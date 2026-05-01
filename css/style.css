@@ -6,6 +6,10 @@
     --border-color: #E2E8F0;
 }
 
+html {
+    scroll-padding-top: 96px;
+}
+
 body {
     font-size: 14px;
     color: var(--dark-color);
@@ -1074,6 +1078,10 @@ form button i {
 }
 
 .property-item:hover .property-details {
+    box-shadow: 2px 8px 15px rgb(0, 0, 0, 0.1);
+}
+
+a.text-reset:hover .property-item .property-details {
     box-shadow: 2px 8px 15px rgb(0, 0, 0, 0.1);
 }
 
