@@ -9,29 +9,54 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="../../index.html">
                 <img src="https://www.dreamneighborhood.com/favicon.ico" height="36" alt="Dream Neighborhood logo">
                 <span>Dream Neighborhood Realty Co.</span>
             </a>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Buy</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../index.html#featured-properties">Featured Properties</a></li>
-                        <li><a class="dropdown-item" href="../../search.html">Search Properties</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Neighborhoods</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item active" href="../south-hutchinson-island-fl.html">South Hutchinson Island, FL</a></li>
-                        <li><a class="dropdown-item" href="../st-lucie-village-fl.html">St. Lucie Village, FL</a></li>
-                        <li><a class="dropdown-item" href="../melbourne-fl.html">Melbourne, FL</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteMainNav"
+                aria-controls="siteMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="siteMainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navBuy" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Buy</a>
+                        <ul class="dropdown-menu" aria-labelledby="navBuy">
+                            <li><a class="dropdown-item" href="../../index.html#featured-properties">Featured Properties</a></li>
+                            <li><a class="dropdown-item" href="../../search.html">Search Properties</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navNb" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Neighborhoods</a>
+                        <ul class="dropdown-menu" aria-labelledby="navNb">
+                            <li><a class="dropdown-item active" href="../south-hutchinson-island-fl.html">South Hutchinson Island, FL</a></li>
+                            <li><a class="dropdown-item" href="../st-lucie-village-fl.html">St. Lucie Village, FL</a></li>
+                            <li><a class="dropdown-item" href="../melbourne-fl.html">Melbourne, FL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-contact d-flex flex-wrap align-items-center gap-3 ms-lg-auto mt-3 mt-lg-0">
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <span class="label d-block">Phone</span>
+                            <span class="value d-block">678-404-2660</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <span class="label d-block">Email</span>
+                            <span class="value d-block">bill@dreamneighborhood.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="container py-5">
