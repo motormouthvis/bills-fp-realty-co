@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Neighborhood Realty Co.</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-    <!-- Css Files & Libraries -->
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" href="libs/owl/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="libs/niceselect/css/nice-select.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
-    <link rel="stylesheet" href="libs/jquery_ui/jquery-ui.css">
-    <link rel="stylesheet" href="libs/odometer/themes/odometer-theme-default.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <div id="app">
-        <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html" title="Logo">
-                    <img src="images/logo.png" height="50" alt="">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" title="Dream Neighborhood Realty Co.">
+                    <img src="https://www.dreamneighborhood.com/favicon.ico" height="36" alt="Dream Neighborhood logo">
+                    <span>Dream Neighborhood Realty Co.</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" title="Menu Toggle"
                     data-bs-target="#offcanvas" aria-controls="offcanvas">
@@ -41,67 +27,47 @@
                 </button>
                 <div class="offcanvas offcanvas-end w-100" id="offcanvas">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand" href="index.html" title="Logo">
-                            <img src="images/logo.png" height="50" alt="">
+                        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" title="Dream Neighborhood Realty Co.">
+                            <img src="https://www.dreamneighborhood.com/favicon.ico" height="36" alt="Dream Neighborhood logo">
+                            <span>Dream Neighborhood Realty Co.</span>
                         </a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Pages
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Buy</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="search.html">Search</a></li>
+                                    <li><a class="dropdown-item" href="index.html#featured-properties">Featured Properties</a></li>
+                                    <li><a class="dropdown-item" href="search.html">Search Properties</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Neighborhoods
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Neighborhoods</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="neighborhoods/south-hutchinson-island-fl.html">South Hutchinson
-                                            Island, FL</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="neighborhoods/st-lucie-village-fl.html">St. Lucie Village, FL</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="neighborhoods/melbourne-fl.html">Melbourne, FL</a></li>
+                                    <li><a class="dropdown-item" href="neighborhoods/south-hutchinson-island-fl.html">South Hutchinson Island, FL</a></li>
+                                    <li><a class="dropdown-item" href="neighborhoods/st-lucie-village-fl.html">St. Lucie Village, FL</a></li>
+                                    <li><a class="dropdown-item" href="neighborhoods/melbourne-fl.html">Melbourne, FL</a></li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
                             </li>
                         </ul>
                         <div class="row">
                             <div class="col-12 col-sm-6 mb-3 mb-sm-0">
                                 <div class="d-flex phone-info">
-                                    <div class="flex-shrink-0 me-3">
-                                        <i class='bx bx-phone fs-4 text-main-color'></i>
-                                    </div>
+                                    <div class="flex-shrink-0 me-3"><i class='bx bx-phone fs-4 text-main-color'></i></div>
                                     <div class="flex-grow-1">
                                         <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
-                                        <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                                        <span class="fs-14 fw-semibold">678-404-2660</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 mb-3 mb-sm-0">
                                 <div class="d-flex mail-info">
-                                    <div class="flex-shrink-0 me-3">
-                                        <i class='bx bx-envelope fs-4 text-main-color'></i>
-                                    </div>
+                                    <div class="flex-shrink-0 me-3"><i class='bx bx-envelope fs-4 text-main-color'></i></div>
                                     <div class="flex-grow-1">
                                         <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
-                                        <span class="fs-14 fw-semibold">example@mail.com</span>
+                                        <span class="fs-14 fw-semibold">bill@dreamneighborhood.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -110,427 +76,74 @@
                 </div>
             </div>
         </nav>
-        <!-- ./navbar -->
 
-
-        <!-- Header Start -->
         <header class="header">
             <div class="container">
                 <div class="header-inner">
                     <div class="text-content">
                         <h6>Welcome to <span>Dream Neighborhood Realty Co.</span></h6>
-                        <h2>We are a real estate agency</h2>
-                        <p>
-                            The customer is very important, the customer will be followed by the customer. He needs fear
-                            and hatred for the life of the ultricies in the world. In order to solve the problem, the
-                            most important thing is to put the eros. There is nothing easy.
-                        </p>
+                        <h2>Florida homes with local neighborhood expertise.</h2>
+                        <p>Work directly with William Miller to buy in Melbourne, St. Lucie Village, and South Hutchinson Island.</p>
                         <div class="d-flex mt-4 justify-content-center justify-content-md-start">
-                            <a href="#" class="btn" role="button">Make an enquiry</a>
-                            <a href="#" class="play-video-btn pulse" role="button" title="Watch video">
-                                <i class="bx bx-play"></i>
-                            </a>
+                            <a href="search.html" class="btn" role="button">Search Properties</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- ./header -->
 
-
-        <!-- Filter Search Box -->
-        <div class="estate-search-box">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="location" id="location" class="w-100" title="Select location">
-                            <option value="" hidden>Choose area</option>
-                            <option value="">Cairo</option>
-                            <option value="">Alexandria</option>
-                            <option value="">Beheira</option>
-                            <option value="">Gharbia</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="property_estate" id="property_estate" class="w-100"
-                            title="Select property estate">
-                            <option value="" hidden>Property State</option>
-                            <option value="">Open house</option>
-                            <option value="">Rent</option>
-                            <option value="">Sell</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="property_type" id="property_type" class="w-100" title="Select property type">
-                            <option value="" hidden>Property Type</option>
-                            <option value="">Apartment</option>
-                            <option value="">Co-op</option>
-                            <option value="">Condo</option>
-                            <option value="">Single Family Home</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <button type="button" class="btn w-100 w-md-auto" data-text="Find Now">Find Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ./estate-search-box -->
-
-
-        <!-- About Us -->
-        <section class="section about-us-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 d-none d-md-block">
-                        <div class="position-relative">
-                            <img src="images/image-10.jpg" height="500" alt="">
-                            <img src="images/image-4.jpg" class="bottom-15 end-0 position-absolute shadow-sm"
-                                height="200" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 offset-md-1">
-                        <h6 class="section-title">About us</h6>
-                        <h2 class="fw-bold">The Leading Real Estate Rental Marketplace.</h2>
-                        <p class="my-4">Over 39,000 people work for us in more than 70 countries all over the This
-                            breadth of global coverage, combined with specialist services</p>
-                        <div class="list-icons">
-                            <div class="row">
-                                <div class="col-12 col-lg-6 mb-3">
-                                    <i class="bx bx-home"></i> Smart Home Design
-                                </div>
-                                <div class="col-12 col-lg-6 mb-3">
-                                    <i class="bx bx-dumbbell"></i>Exceptional Lifestyle
-                                </div>
-                                <div class="col-12 col-lg-6 mb-3">
-                                    <i class="bx bx-party"></i>Beautiful Scene Around
-                                </div>
-                                <div class="col-12 col-lg-6 mb-3">
-                                    <i class="bx bx-support"></i>Complete 24/7 Security
-                                </div>
-                            </div>
-                        </div>
-                        <div class="alert-quote">
-                            "Enimad minim veniam quis nostrud exercitation llamco laboris. Lorem ipsum dolor sit amet"
-                        </div>
-                        <a href="#" role="button" class="btn mt-4">Our Services</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./about-us-area -->
-
-
-        <!-- Statistics -->
-        <section class="section statistic-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-2 align-self-center">
-                        <h6><span class="fw-light">What are you</span> looking for?</h6>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="static-item">
-                            <span class="text">APARTMENT</span>
-                            <span><span class="counter odometer" data-value="8956"></span>k</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="static-item">
-                            <span class="text">CONDOMINIUM</span>
-                            <span><span class="counter odometer" data-value="13250"></span>+</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="static-item">
-                            <span class="text">HOME</span>
-                            <span><span class="counter odometer" data-value="3405"></span>k</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="static-item">
-                            <span class="text">OFFICE</span>
-                            <span><span class="counter odometer" data-value="30741"></span>k</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-none d-md-block">
-                        <div class="static-item">
-                            <span class="text">SHOP</span>
-                            <span><span class="counter odometer" data-value="19019"></span>K</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./statistic-area -->
-
-
-        <!-- Property Store -->
-        <section class="section property-store-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-5">
-                        <div class="position-relative">
-                            <img src="images/image-6.jpg" alt="">
-                            <div class="bg-main-color bottom-0 end-0 p-4 position-absolute">
-                                <i class="bx bx-home bx-sm text-white"></i>
-                                <h6 class="fs-3 fw-bold mb-0 my-2 text-white">258,952+</h6>
-                                <span class="fs-11 text-white">Properties listed for sell</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 offset-md-1">
-                        <h6 class="section-title">Online property marketplace</h6>
-                        <h2 class="fw-bold">We help you find your new place.</h2>
-                        <p class="my-4">Online property marketplace to buy, sell, and rent residential and commercial
-                            properties. Used by millions of renters to find property.</p>
-                        <div class="list-icons ps-4">
-                            <div class="row">
-                                <div class="col-12 col-lg-6 mb-3">
-                                    <i class="bx bx-check"></i>More than 10 years of experience.
-                                </div>
-                                <div class="col-12 col-lg-6 mb-3">
-                                    <i class="bx bx-check"></i>10,000+ people trusting our agency.
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" role="button" class="btn dark mt-2">About Company</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./property-store-area -->
-
-
-        <!-- Services -->
-        <section class="section services-area bg-light">
+        <section class="section featured-listing-area" id="featured-properties">
             <div class="container">
                 <div class="text-center mb-6">
-                    <h6 class="section-title">Our Services</h6>
-                    <h2 class="fw-bold">Our Main Focus</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                        <div class="card services-card">
-                            <div class="card-body">
-                                <img src="images/service_icon_1.png" alt="">
-                                <h5><a href="#">Buy a home</a></h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non ipsam deleniti,
-                                    ipsa doloribus perferendis.</p>
-                                <a href="#">Find A Home <i class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                        <div class="card services-card">
-                            <div class="card-body">
-                                <img src="images/service_icon_2.png" alt="">
-                                <h5><a href="#">Rent a home</a></h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non ipsam deleniti,
-                                    ipsa doloribus perferendis.</p>
-                                <a href="#">Find A Home <i class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                        <div class="card services-card">
-                            <div class="card-body">
-                                <img src="images/service_icon_3.png" alt="">
-                                <h5><a href="#">Sell a home</a></h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non ipsam deleniti,
-                                    ipsa doloribus perferendis.</p>
-                                <a href="#">Find A Home <i class="bx bx-right-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./services-area -->
-
-
-        <!-- Featured Listing -->
-        <section class="section owl-section featured-listing-area">
-            <div class="container">
-                <div class="text-center mb-6">
-                    <h6 class="section-title">Properties</h6>
-                    <h2 class="fw-bold">Featured Listings</h2>
+                    <h6 class="section-title">Buy</h6>
+                    <h2 class="fw-bold">Featured Properties</h2>
                 </div>
 
                 <div class="row justify-content-center featured-listings-row">
-                    <div class="col-12 col-md-6 col-lg-5 mb-4">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <a href="properties/5-harbour-isle-dr-e-fort-pierce-fl.html" class="text-decoration-none text-reset">
                             <div class="featured-list-card h-100">
                                 <div class="card-image">
-                                    <img src="images/image-7.jpg" alt="5 Harbour Isle Dr E, Fort Pierce, FL">
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="5 Harbour Isle Dr E, Fort Pierce, FL">
                                     <span>For Sale</span>
-                                    <div class="location-gallery">
-                                        <div class="location">
-                                            <i class="bx bx-map-alt"></i> Fort Pierce, FL
-                                        </div>
-                                        <div class="gallery">
-                                            <i class="bx bx-camera"></i> 12
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="p-4 pt-0">
-                                        <span class="price">$725,000</span>
-                                        <h6>5 Harbour Isle Dr E, Fort Pierce, FL</h6>
-                                        <p>Beautiful waterfront home in the gated Harbour Isle community. Enjoy stunning
-                                            views, resort-style amenities, and direct access to the Intracoastal.</p>
-                                        <ul class="nav">
-                                            <li class="border-end pe-3 me-3">
-                                                <span class="d-block">3 <i class="bx bx-bed"></i></span>
-                                                Bedrooms
-                                            </li>
-                                            <li class="border-end pe-3 me-3">
-                                                <span class="d-block">2 <i class="bx bx-shower"></i></span>
-                                                Bathrooms
-                                            </li>
-                                            <li>
-                                                <span class="d-block">2100 <i class="bx bxl-graphql"></i></span>
-                                                Square FT
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div
-                                        class="align-items-center d-flex estate-agents justify-content-between pt-4 bg-light p-3">
-                                        <div class="d-flex">
-                                            <div class="flex-shrink-0 me-3">
-                                                <img src="https://via.placeholder.com/48" class="rounded-circle"
-                                                    width="48" height="48" alt="">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                        <span class="fw-semibold d-block">William Miller</span>
-                                        <small class="text-muted">Realtor</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-actions">
-                                            <span class="ms-2 fw-semibold text-main-color">View Details <i
-                                                    class="bx bx-right-arrow-alt"></i></span>
-                                        </div>
-                                    </div>
+                                <div class="card-body p-4">
+                                    <span class="price">$725,000</span>
+                                    <h6>5 Harbour Isle Dr E, Fort Pierce, FL</h6>
+                                    <p>Waterfront home with Intracoastal views and gated community amenities.</p>
+                                    <small class="text-muted">Listed by William Miller</small>
                                 </div>
                             </div>
                         </a>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-5 mb-4">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <a href="properties/3309-n-indian-river-dr-st-lucie-village-fl.html" class="text-decoration-none text-reset">
                             <div class="featured-list-card h-100">
                                 <div class="card-image">
-                                    <img src="images/image-11.jpg" alt="3309 N Indian River Dr, St. Lucie Village, FL">
+                                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="3309 N Indian River Drive, St Lucie Village, FL">
                                     <span>For Sale</span>
-                                    <div class="location-gallery">
-                                        <div class="location">
-                                            <i class="bx bx-map-alt"></i> St. Lucie Village, FL
-                                        </div>
-                                        <div class="gallery">
-                                            <i class="bx bx-camera"></i> 14
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="p-4 pt-0">
-                                        <span class="price">$1,250,000</span>
-                                        <h6>3309 N Indian River Dr, St. Lucie Village, FL</h6>
-                                        <p>Riverfront retreat on the Indian River with private dock potential, lush
-                                            mature landscaping, and panoramic water views from nearly every room.</p>
-                                        <ul class="nav">
-                                            <li class="border-end pe-3 me-3">
-                                                <span class="d-block">4 <i class="bx bx-bed"></i></span>
-                                                Bedrooms
-                                            </li>
-                                            <li class="border-end pe-3 me-3">
-                                                <span class="d-block">3 <i class="bx bx-shower"></i></span>
-                                                Bathrooms
-                                            </li>
-                                            <li>
-                                                <span class="d-block">3200 <i class="bx bxl-graphql"></i></span>
-                                                Square FT
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div
-                                        class="align-items-center d-flex estate-agents justify-content-between pt-4 bg-light p-3">
-                                        <div class="d-flex">
-                                            <div class="flex-shrink-0 me-3">
-                                                <img src="https://via.placeholder.com/48" class="rounded-circle"
-                                                    width="48" height="48" alt="">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                        <span class="fw-semibold d-block">William Miller</span>
-                                        <small class="text-muted">Realtor</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-actions">
-                                            <span class="ms-2 fw-semibold text-main-color">View Details <i
-                                                    class="bx bx-right-arrow-alt"></i></span>
-                                        </div>
-                                    </div>
+                                <div class="card-body p-4">
+                                    <span class="price">$1,250,000</span>
+                                    <h6>3309 N Indian River Drive, St Lucie Village, FL</h6>
+                                    <p>Riverfront retreat with spacious layout and panoramic water views.</p>
+                                    <small class="text-muted">Listed by William Miller</small>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-5 mb-4">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <a href="properties/6165-isla-st-melbourne-fl.html" class="text-decoration-none text-reset">
                             <div class="featured-list-card h-100">
                                 <div class="card-image">
-                                    <img src="images/image-10.jpg" alt="6165 Isla St, Melbourne, FL">
+                                    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80" alt="6165 Isla St, Melbourne, FL">
                                     <span>For Sale</span>
-                                    <div class="location-gallery">
-                                        <div class="location">
-                                            <i class="bx bx-map-alt"></i> Melbourne, FL
-                                        </div>
-                                        <div class="gallery">
-                                            <i class="bx bx-camera"></i> 10
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="p-4 pt-0">
-                                        <span class="price">$895,000</span>
-                                        <h6>6165 Isla St, Melbourne, FL</h6>
-                                        <p>Spacious coastal-inspired home near shopping, beaches, and top schools with an
-                                            open floor plan and private backyard oasis.</p>
-                                        <ul class="nav">
-                                            <li class="border-end pe-3 me-3">
-                                                <span class="d-block">4 <i class="bx bx-bed"></i></span>
-                                                Bedrooms
-                                            </li>
-                                            <li class="border-end pe-3 me-3">
-                                                <span class="d-block">3 <i class="bx bx-shower"></i></span>
-                                                Bathrooms
-                                            </li>
-                                            <li>
-                                                <span class="d-block">2750 <i class="bx bxl-graphql"></i></span>
-                                                Square FT
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div
-                                        class="align-items-center d-flex estate-agents justify-content-between pt-4 bg-light p-3">
-                                        <div class="d-flex">
-                                            <div class="flex-shrink-0 me-3">
-                                                <img src="https://via.placeholder.com/48" class="rounded-circle"
-                                                    width="48" height="48" alt="">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <span class="fw-semibold d-block">William Miller</span>
-                                                <small class="text-muted">Realtor</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-actions">
-                                            <span class="ms-2 fw-semibold text-main-color">View Details <i
-                                                    class="bx bx-right-arrow-alt"></i></span>
-                                        </div>
-                                    </div>
+                                <div class="card-body p-4">
+                                    <span class="price">$895,000</span>
+                                    <h6>6165 Isla St, Melbourne, FL</h6>
+                                    <p>Updated Melbourne home with open layout and private backyard.</p>
+                                    <small class="text-muted">Listed by William Miller</small>
                                 </div>
                             </div>
                         </a>
@@ -538,349 +151,34 @@
                 </div>
             </div>
         </section>
-        <!-- ./featured-listing-area -->
 
-
-        <!-- Plane -->
-        <section class="section plane-area">
-            <div class="container-fluid">
-                <div class="text-center mb-6">
-                    <h6 class="section-title">Apartment Sketch</h6>
-                    <h2 class="fw-bold">Apartments Plan</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 sketch-details">
-                        <h2>Deluxe Portion</h2>
-                        <p>Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet
-                            cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna
-                            aliqua. sed ayd minim veniam.</p>
-                        <ul>
-                            <li>
-                                <span>Total Area</span>
-                                <span>2800 Sq. Ft</span>
-                            </li>
-                            <li>
-                                <span>Bedroom</span>
-                                <span>150 Sq. Ft</span>
-                            </li>
-                            <li>
-                                <span>Bathroom</span>
-                                <span>45 Sq. Ft</span>
-                            </li>
-                            <li>
-                                <span>Belcony/Pets</span>
-                                <span>Allowed</span>
-                            </li>
-                            <li>
-                                <span>Lounge</span>
-                                <span>650 Sq. Ft</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img src="images/sketch.png" height="550" class="w-100" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./plane-area -->
-
-
-        <!-- Aminities -->
-        <section class="section aminities-area">
-            <div class="container">
-                <div class="text-center mb-6">
-                    <h6 class="section-title">Our Aminities</h6>
-                    <h2 class="fw-bold">Building Aminities</h2>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>Parking Space</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>Swimming Pool</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>Private Security</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>Medical Center</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>Library Area</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>King Size Beds</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>Smart Homes</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="aminity-card">
-                            <div class="icon">
-                                <i class="bx bx-car"></i>
-                            </div>
-                            <h6>Kid’s Playland</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./aminities-area -->
-
-
-        <!-- Testimonial -->
-        <section class="section owl-section testimonial-area bg-light">
-            <div class="container">
-                <div class="text-center mb-6">
-                    <h6 class="section-title">Our Testimonial</h6>
-                    <h2 class="fw-bold">Clients Feedback</h2>
-                </div>
-                <div class="owl-carousel">
-                    <div class="card feedback-card">
-                        <div class="card-body">
-                            <i class="bx bxs-quote-left"></i>
-                            <p>
-                                The company itself is a very successful company. Let it be that they are. For the
-                                smallest But most of all, the inventor, they leave to some of us who continue to reject
-                                the
-                                pleasure We charge that no one chooses to provide trouble-making training. in pain
-                                they are real.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 me-3">
-                                    <img src="https://picsum.photos/45" alt="">
-                                </div>
-                                <div class="flex-grow-1">
-                                    <h6>Adams Davi</h6>
-                                    <small>Selling Agents</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card feedback-card">
-                        <div class="card-body">
-                            <i class="bx bxs-quote-left"></i>
-                            <p>
-                                The company itself is a very successful company. Let it be that they are. For the
-                                smallest But most of all, the inventor, they leave to some of us who continue to reject
-                                the
-                                pleasure We charge that no one chooses to provide trouble-making training. in pain
-                                they are real.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 me-3">
-                                    <img src="https://picsum.photos/45" alt="">
-                                </div>
-                                <div class="flex-grow-1">
-                                    <h6>William Miller</h6>
-                                    <small>Selling Agents</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card feedback-card">
-                        <div class="card-body">
-                            <i class="bx bxs-quote-left"></i>
-                            <p>
-                                The company itself is a very successful company. Let it be that they are. For the
-                                smallest But most of all, the inventor, they leave to some of us who continue to reject
-                                the
-                                pleasure We charge that no one chooses to provide trouble-making training. in pain
-                                they are real.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 me-3">
-                                    <img src="https://picsum.photos/45" alt="">
-                                </div>
-                                <div class="flex-grow-1">
-                                    <h6>Dee Parker</h6>
-                                    <small>Selling Agents</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./testimonial-area -->
-
-
-        <!-- Call To Action -->
-        <section class="section call-to-action-area position-relative pb-0 mb-0">
-            <div class="container">
-                <div class="call-to-action-inner">
-                    <div class="d-md-flex align-items-center mb-0 text-center text-md-start">
-                        <div class="me-auto">
-                            <h6>Looking for your dream home?</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </div>
-                        <a href="#" role="button">Get On Touch</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./call-to-action-area -->
-
-
-        <!-- Footer -->
         <div class="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="index.html" title="Dream Neighborhood Realty Co.">
-                            <img src="images/logo_reverse.png" alt="Logo">
-                        </a>
-                        <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quae ducimus
-                            veniam
-                            vitae modi est.</p>
-                        <ul class="nav flex-column ms-3">
-                            <li class="nav-item my-2">
-                                <i class="bx bx-map"></i>
-                                Naser City, Cairo, Egypt
-                            </li>
-                            <li class="nav-item my-2">
-                                <i class="bx bx-phone"></i>
-                                (+20) 123 456 789
-                            </li>
-                            <li class="nav-item my-2">
-                                <i class="bx bx-envelope"></i>
-                                example@email.com
-                            </li>
-                        </ul>
-                        <div class="social-links">
-                            <a href="https://facebook.com/ahmedelsewailky" target="_blank" title="Facebook"
-                                rel="noopener"><i class="bx bxl-facebook"></i></a>
-                            <a href="https://github.com/ahmedelsewailky" target="_blank" title="Github"
-                                rel="noopener"><i class="bx bxl-github"></i></a>
-                            <a href="https://www.linkedin.com/in/ahmed-elsewailky-a83882144/" target="_blank"
-                                title="Linkedin" rel="noopener"><i class="bx bxl-linkedin"></i></a>
-                            <a href="https://facebook.com/elsewailky" target="_blank" title="Twitter" rel="noopener"><i
-                                    class="bx bxl-twitter"></i></a>
-                        </div>
+                <div class="row align-items-start">
+                    <div class="col-12 col-md-8">
+                        <h6>Dream Neighborhood Realty Co.</h6>
+                        <p>3309 N Indian River Drive, St Lucie Village</p>
+                        <p>Phone: 678-404-2660</p>
+                        <p>Email: bill@dreamneighborhood.com</p>
+                        <p>Realtor: William Miller</p>
                     </div>
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <h6>Company</h6>
+                    <div class="col-12 col-md-4">
+                        <h6>Quick Links</h6>
                         <ul class="nav flex-column page-list">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link border-0">Contact Us</a>
-                            </li>
+                            <li class="nav-item"><a href="search.html" class="nav-link">Search Properties</a></li>
+                            <li class="nav-item"><a href="neighborhoods/melbourne-fl.html" class="nav-link">Neighborhoods</a></li>
                         </ul>
-                    </div>
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <h6>News Letter</h6>
-                        <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
-                        <form action="?" method="get">
-                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email"
-                                autocomplete="email">
-                            <button type="button" class="btn" title="Subscribe"><i class="bx bx-send"></i></button>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ./footer -->
 
-
-        <!-- Copy Rights -->
         <div class="copy-right">
             <div class="container">
-                <div class="d-md-flex align-items-center justify-content-between">
-                    <p class="text-capitalize text-center text-md-start">All rights resaved © 2024</p>
-                    <ul class="nav justify-content-center justify-content-md-start">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Terms & Conditions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <p class="text-center mb-0">All rights reserved &copy; 2026 Dream Neighborhood Realty Co.</p>
             </div>
         </div>
-        <!-- ./copy-right -->
-
-        <div class="cursor"></div>
     </div>
-
-
-    <!-- Js Files & Libraries -->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="libs/owl/owl.carousel.min.js"></script>
-    <script src="libs/counterjs/jquery.waypoints.min.js"></script>
-    <script src="libs/counterjs/jquery.counterup.min.js"></script>
-    <script src="libs/niceselect/js/jquery.nice-select.min.js"></script>
-    <script src="libs/jquery_ui/jquery-ui.js"></script>
-    <script src="libs/slick/slick.min.js"></script>
-    <script src="libs/lightcase/js/lightcase.js"></script>
-    <script src="libs/lightcase/js/jquery.events.touch.min.js"></script>
-    <script src="libs/odometer/odometer.js"></script>
-    <script src="js/main.js"></script>
 </body>
-
 </html>

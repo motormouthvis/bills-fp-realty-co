@@ -865,8 +865,8 @@ a.play-video-btn.pulse:after {
 /*  =========================================================================   Call To Action  */
 .footer {
     padding: 2.25rem;
-    background-color: var(--dark-color);
-    color: white;
+    background-color: #e9f5ec;
+    color: var(--dark-color);
 }
 
 .footer h6 {
@@ -884,7 +884,7 @@ a.play-video-btn.pulse:after {
 .footer .nav-link {
     padding: 1rem .5rem;
     position: relative;
-    border-bottom: 1px dashed #424a45;
+    border-bottom: 1px dashed #b6c8bb;
 }
 
 .footer ul i {
@@ -907,7 +907,7 @@ a.play-video-btn.pulse:after {
     margin-right: .75rem;
     border: 1px solid;
     transform: rotate(45deg);
-    border-color: white white transparent transparent;
+    border-color: var(--dark-color) var(--dark-color) transparent transparent;
 }
 
 .social-links i {
@@ -916,13 +916,13 @@ a.play-video-btn.pulse:after {
 }
 
 .social-links {
-    border-top: 1px solid #ffffff1c;
+    border-top: 1px solid #b6c8bb;
     margin-top: 1.5rem;
 }
 
 .copy-right {
-    background-color: #434845;
-    color: white;
+    background-color: #d3e9d8;
+    color: var(--dark-color);
 }
 
 /*  =========================================================================   Search.html  */
