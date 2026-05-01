@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateX - Free Bootstrap 5 Template</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Files & Libraries -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="libs/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/niceselect/css/nice-select.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="libs/jquery_ui/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" title="Logo">
+                    <img src="images/logo.png" height="50" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" title="Menu Toggle"
+                    data-bs-target="#offcanvas" aria-controls="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end w-100" id="offcanvas">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html" title="Logo">
+                            <img src="images/logo.png" height="50" alt="">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="single.html">Property Details</a></li>
+                                    <li><a class="dropdown-item active" href="search.html">Search</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex phone-info">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class='bx bx-phone fs-4 text-main-color'></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
+                                        <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex mail-info">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class='bx bx-envelope fs-4 text-main-color'></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
+                                        <span class="fs-14 fw-semibold">example@mail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ./navbar -->
+
+        <!-- Breadcrumbs -->
+        <section class="section page-breadcrumb mb-5">
+            <div class="container">
+                <h2>Intelilligent Filter Box</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="bx bx-home"></i><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Find Your Dream Property</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- ./page-breadcrumb -->
+
+
+        <div class="container">
+            <div class="row">
+                <!-- Main Page Content -->
+                <div class="col-12 col-md-8">
+                    <main class="filter-results-area">
+                        <div class="filter-options">
+                            <div class="grid-view">
+                                <a href="#" role="button" title="Thumbnail grid" class="active"><i
+                                        class="bx bx-category"></i></a>
+                                <a href="#" role="button" title="Thumbnail grid"><i class="bx bx-list-ol"></i></a>
+                            </div>
+
+                            <div class="showing-number">
+                                <p>Showing 1-12 of 50 results</p>
+                            </div>
+
+                            <select name="sort" id="sort" title="Sorting view">
+                                <option data-display="Default Sorting">Default Sorting</option>
+                                <option value="">Sort by popularity</option>
+                                <option value="">Sort by new arrivals</option>
+                                <option value="">Sort by price: low to high</option>
+                                <option value="">Sort by price: high to low</option>
+                            </select>
+                        </div>
+
+                        <form action="#" method="get">
+                            <input type="text" name="search" class="form-control" placeholder="Search your keyword...">
+                            <button type="submit" class="btn" title="Search"><i class="bx bx-search"></i></button>
+                        </form>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="property-item">
+                                    <div class="property-image">
+                                        <img src="images/image-2.jpg" height="250" alt="">
+                                    </div>
+                                    <div class="property-details">
+                                        <span class="info-label">For Rent</span>
+                                        <h3 class="title">New Apartment Nice View</h3>
+                                        <div class="location">
+                                            <i class="bx bx-map"></i>
+                                            Naser City, Ciro, Egypt
+                                        </div>
+                                        <ul>
+                                            <li>3 Bed</li>
+                                            <li>2 Bath</li>
+                                            <li>4200 Square Ft.</li>
+                                        </ul>
+                                        <div class="actions">
+                                            <a href="#" title="See details"><i class="bx bx-expand-alt"></i></a>
+                                            <a href="#" title="Add to favorites"><i class="bx bx-heart"></i></a>
+                                            <a href="#" title="Link"><i class="bx bx-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="property-item">
+                                    <div class="property-image">
+                                        <img src="images/image-4.jpg" height="250" alt="">
+                                    </div>
+                                    <div class="property-details">
+                                        <span class="info-label">For Rent</span>
+                                        <h3 class="title">New Apartment Nice View</h3>
+                                        <div class="location">
+                                            <i class="bx bx-map"></i>
+                                            Naser City, Ciro, Egypt
+                                        </div>
+                                        <ul>
+                                            <li>3 Bed</li>
+                                            <li>2 Bath</li>
+                                            <li>4200 Square Ft.</li>
+                                        </ul>
+                                        <div class="actions">
+                                            <a href="#" title="See details"><i class="bx bx-expand-alt"></i></a>
+                                            <a href="#" title="Add to favorites"><i class="bx bx-heart"></i></a>
+                                            <a href="#" title="Link"><i class="bx bx-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="property-item">
+                                    <div class="property-image">
+                                        <img src="images/image-3.jpg" height="250" alt="">
+                                    </div>
+                                    <div class="property-details">
+                                        <span class="info-label">For Rent</span>
+                                        <h3 class="title">New Apartment Nice View</h3>
+                                        <div class="location">
+                                            <i class="bx bx-map"></i>
+                                            Naser City, Ciro, Egypt
+                                        </div>
+                                        <ul>
+                                            <li>3 Bed</li>
+                                            <li>2 Bath</li>
+                                            <li>4200 Square Ft.</li>
+                                        </ul>
+                                        <div class="actions">
+                                            <a href="#" title="See details"><i class="bx bx-expand-alt"></i></a>
+                                            <a href="#" title="Add to favorites"><i class="bx bx-heart"></i></a>
+                                            <a href="#" title="Link"><i class="bx bx-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="property-item">
+                                    <div class="property-image">
+                                        <img src="images/image-4.jpg" height="250" alt="">
+                                    </div>
+                                    <div class="property-details">
+                                        <span class="info-label">For Rent</span>
+                                        <h3 class="title">New Apartment Nice View</h3>
+                                        <div class="location">
+                                            <i class="bx bx-map"></i>
+                                            Naser City, Ciro, Egypt
+                                        </div>
+                                        <ul>
+                                            <li>3 Bed</li>
+                                            <li>2 Bath</li>
+                                            <li>4200 Square Ft.</li>
+                                        </ul>
+                                        <div class="actions">
+                                            <a href="#" title="See details"><i class="bx bx-expand-alt"></i></a>
+                                            <a href="#" title="Add to favorites"><i class="bx bx-heart"></i></a>
+                                            <a href="#" title="Link"><i class="bx bx-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="property-item">
+                                    <div class="property-image">
+                                        <img src="images/image-5.jpg" height="250" alt="">
+                                    </div>
+                                    <div class="property-details">
+                                        <span class="info-label">For Rent</span>
+                                        <h3 class="title">New Apartment Nice View</h3>
+                                        <div class="location">
+                                            <i class="bx bx-map"></i>
+                                            Naser City, Ciro, Egypt
+                                        </div>
+                                        <ul>
+                                            <li>3 Bed</li>
+                                            <li>2 Bath</li>
+                                            <li>4200 Square Ft.</li>
+                                        </ul>
+                                        <div class="actions">
+                                            <a href="#" title="See details"><i class="bx bx-expand-alt"></i></a>
+                                            <a href="#" title="Add to favorites"><i class="bx bx-heart"></i></a>
+                                            <a href="#" title="Link"><i class="bx bx-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="property-item">
+                                    <div class="property-image">
+                                        <img src="images/image-6.jpg" height="250" alt="">
+                                    </div>
+                                    <div class="property-details">
+                                        <span class="info-label">For Rent</span>
+                                        <h3 class="title">New Apartment Nice View</h3>
+                                        <div class="location">
+                                            <i class="bx bx-map"></i>
+                                            Naser City, Ciro, Egypt
+                                        </div>
+                                        <ul>
+                                            <li>3 Bed</li>
+                                            <li>2 Bath</li>
+                                            <li>4200 Square Ft.</li>
+                                        </ul>
+                                        <div class="actions">
+                                            <a href="#" title="See details"><i class="bx bx-expand-alt"></i></a>
+                                            <a href="#" title="Add to favorites"><i class="bx bx-heart"></i></a>
+                                            <a href="#" title="Link"><i class="bx bx-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination my-4">
+                                    <li class="page-item"><a class="page-link" href="#" title="Previous"><i
+                                                class="bx bx-chevrons-left"></i></a></li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" title="Next"><i
+                                                class="bx bx-chevrons-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </main>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-12 col-md-4">
+                    <aside class="filter-sidebar sticky-md-top">
+                        <form action="search.html" method="get">
+                            <h4 class="border-0 pt-0">Property Type</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        House
+                                        <span>3,924</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Single Family
+                                        <span>3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Apartment
+                                        <span>2,912</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Office Villa
+                                        <span>2,687</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Luxary Home
+                                        <span>1,853</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Studio
+                                        <span>893</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Amenities</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Dishwasher
+                                        <span>3,924</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Floor Coverings
+                                        <span>3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Internet
+                                        <span>2,912</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Build Wardrobes
+                                        <span>2,687</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Supermarket
+                                        <span>1,853</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Kids Zone
+                                        <span>893</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Price Renge</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Low Budget
+                                        <span>$5,000 - $10,000</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" checked="checked">
+                                        Medium
+                                        <span>$10,000 - $30,000</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        High Budget
+                                        <span>$30,000 Up</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Filter by price</h4>
+                            <div class="slider-box">
+                                <label for="priceRange">Price Range:</label>
+                                <input type="text" id="priceRange" readonly>
+                                <div id="price-range" class="slider"></div>
+                            </div>
+
+                            <h4>Bed/bath</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" checked="checked">
+                                        Single
+                                        <span>3,924</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Double
+                                        <span>3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Up To 3
+                                        <span>2,912</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Up To 5
+                                        <span>2,687</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Catagory</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" checked="checked">
+                                        Buying
+                                        <span>3,924</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Renting
+                                        <span>3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Selling
+                                        <span>2,912</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <div class="text-center">
+                                <button type="button" class="btn">Submit</button>
+                            </div>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Call To Action -->
+        <section class="section call-to-action-area position-relative pb-0 mb-0">
+            <div class="container">
+                <div class="call-to-action-inner">
+                    <div class="d-md-flex align-items-center mb-0 text-center text-md-start">
+                        <div class="me-auto">
+                            <h6>Looking for your dream home?</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                        <a href="#" role="button">Get On Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./call-to-action-area -->
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <a href="index.html" title="eStateX">
+                            <img src="images/logo_reverse.png" alt="Logo">
+                        </a>
+                        <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quae ducimus
+                            veniam
+                            vitae modi est.</p>
+                        <ul class="nav flex-column ms-3">
+                            <li class="nav-item my-2">
+                                <i class="bx bx-map"></i>
+                                Naser City, Cairo, Egypt
+                            </li>
+                            <li class="nav-item my-2">
+                                <i class="bx bx-phone"></i>
+                                (+20) 123 456 789
+                            </li>
+                            <li class="nav-item my-2">
+                                <i class="bx bx-envelope"></i>
+                                example@email.com
+                            </li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="https://facebook.com/ahmedelsewailky" target="_blank" title="Facebook"
+                                rel="noopener"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://github.com/ahmedelsewailky" target="_blank" title="Github"
+                                rel="noopener"><i class="bx bxl-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-elsewailky-a83882144/" target="_blank"
+                                title="Linkedin" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                            <a href="https://facebook.com/elsewailky" target="_blank" title="Twitter" rel="noopener"><i
+                                    class="bx bxl-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <h6>Company</h6>
+                        <ul class="nav flex-column page-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link border-0">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <h6>News Letter</h6>
+                        <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
+                        <form action="?" method="get">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email"
+                                autocomplete="email">
+                            <button type="button" class="btn" title="Subscribe"><i class="bx bx-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./footer -->
+
+
+        <!-- Copy Rights -->
+        <div class="copy-right">
+            <div class="container">
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <p class="text-capitalize text-center text-md-start">All rights resaved © 2024</p>
+                    <ul class="nav justify-content-center justify-content-md-start">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ./copy-right -->
+    </div>
+
+
+    <!-- Js Files & Libraries -->
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/counterjs/jquery.waypoints.min.js"></script>
+    <script src="libs/counterjs/jquery.counterup.min.js"></script>
+    <script src="libs/niceselect/js/jquery.nice-select.min.js"></script>
+    <script src="libs/jquery_ui/jquery-ui.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/lightcase/js/lightcase.js"></script>
+    <script src="libs/lightcase/js/jquery.events.touch.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
