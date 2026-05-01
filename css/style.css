@@ -171,21 +171,85 @@ ul.list {
 
 /*  =========================================================================   Navbar  */
 .navbar {
-    padding: 0;
-    height: 100px;
+    padding: 0.35rem 0;
+    min-height: 88px;
+    height: auto;
     transition: 0.3s linear;
+    border-bottom: 1px solid #e6efe8;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    white-space: nowrap;
+}
+
+.navbar-brand img[alt="Dream Neighborhood logo"] {
+    display: none;
+}
+
+.navbar-brand::before {
+    content: "DN";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--main-color);
 }
 
 .navbar-brand span {
     font-weight: 700;
     color: var(--main-color);
-    margin-left: -3px;
-    font-size: 21px;
+    margin-left: 0;
+    font-size: 28px;
 }
 
-.navbar i {
+.navbar .phone-info i,
+.navbar .mail-info i,
+.nav-contact i {
     color: var(--main-color);
-    font-size: 35px !important;
+    font-size: 22px !important;
+}
+
+.nav-contact {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+.nav-contact .contact-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    white-space: nowrap;
+}
+
+.nav-contact .label {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    line-height: 1.1;
+}
+
+.nav-contact .value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-color);
+    line-height: 1.1;
 }
 
 .navbar-nav .nav-link.active,
@@ -242,6 +306,14 @@ ul.list {
 }
 
 @media (max-width: 992px) {
+    .navbar-brand span {
+        font-size: 18px;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+
     .nav-link {
         padding: 1rem;
         font-size: 1rem;
