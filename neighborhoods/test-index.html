@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dream Neighborhood popup QA - 25 community / neighborhood test pages covering every common address-embed pattern found on real estate sites.">
+    <title>Address Detection Test Pages | Dream Neighborhood Realty Co.</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .pattern-badge { font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+        .test-row td { vertical-align: middle; }
+        .difficulty-easy { color: #15803d; font-weight: 600; }
+        .difficulty-medium { color: #b45309; font-weight: 600; }
+        .difficulty-hard { color: #b91c1c; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="../index.html" title="Dream Neighborhood Realty Co.">
+                <img src="../images/logo.png" alt="Dream Neighborhood logo" />
+                <div>
+                    <span style="font-size:26px;font-weight:700;color:#009431;line-height:1;">Dream Neighborhood</span><br>
+                    <span style="font-size:13px;color:#334155;letter-spacing:0.5px;">REALTY CO.</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteMainNav" aria-controls="siteMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="siteMainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navBuy" role="button" data-bs-toggle="dropdown" aria-expanded="false">Buy</a>
+                        <ul class="dropdown-menu" aria-labelledby="navBuy">
+                            <li><a class="dropdown-item" href="../index.html#featured-properties">Featured Properties</a></li>
+                            <li><a class="dropdown-item" href="../search.html">Search Properties</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navNb" role="button" data-bs-toggle="dropdown" aria-expanded="false">Neighborhoods</a>
+                        <ul class="dropdown-menu" aria-labelledby="navNb" style="max-height: 70vh; overflow-y: auto;">
+                            <li><h6 class="dropdown-header">Florida Markets</h6></li>
+                            <li><a class="dropdown-item" href="south-hutchinson-island-fl.html">South Hutchinson Island, FL</a></li>
+                            <li><a class="dropdown-item" href="st-lucie-village-fl.html">St. Lucie Village, FL</a></li>
+                            <li><a class="dropdown-item" href="melbourne-fl.html">Melbourne, FL</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Popup Detection Test Pages</h6></li>
+                            <li><a class="dropdown-item fw-semibold active" href="test-index.html">All Test Pages (Index)</a></li>
+                            <li><a class="dropdown-item" href="boulder-co.html">Boulder, CO</a></li>
+                            <li><a class="dropdown-item" href="austin-heights-tx.html">Austin Heights, TX</a></li>
+                            <li><a class="dropdown-item" href="community-12847.html">Community #12847</a></li>
+                            <li><a class="dropdown-item" href="the-summit.html">The Summit</a></li>
+                            <li><a class="dropdown-item" href="lake-nona-orlando.html">Lake Nona, Orlando</a></li>
+                            <li><a class="dropdown-item" href="buckhead-atlanta.html">Buckhead, Atlanta</a></li>
+                            <li><a class="dropdown-item" href="the-villages-fl.html">The Villages, FL</a></li>
+                            <li><a class="dropdown-item" href="rancho-mission-viejo-ca.html">Rancho Mission Viejo, CA</a></li>
+                            <li><a class="dropdown-item" href="west-loop-chicago.html">West Loop, Chicago</a></li>
+                            <li><a class="dropdown-item" href="summerlin-las-vegas-nv.html">Summerlin, Las Vegas</a></li>
+                            <li><a class="dropdown-item" href="mission-bay-sf.html">Mission Bay, SF</a></li>
+                            <li><a class="dropdown-item" href="eagle-ridge.html">Eagle Ridge</a></li>
+                            <li><a class="dropdown-item" href="the-hammocks-miami.html">The Hammocks, Miami</a></li>
+                            <li><a class="dropdown-item" href="trilogy-at-vistancia-az.html">Trilogy at Vistancia, AZ</a></li>
+                            <li><a class="dropdown-item" href="westside-portland-or.html">Westside, Portland</a></li>
+                            <li><a class="dropdown-item" href="highland-park-dallas.html">Highland Park, Dallas</a></li>
+                            <li><a class="dropdown-item" href="kentlands-md.html">Kentlands, MD</a></li>
+                            <li><a class="dropdown-item" href="boca-pointe-fl.html">Boca Pointe, FL</a></li>
+                            <li><a class="dropdown-item" href="mountain-shadows-co.html">Mountain Shadows, CO</a></li>
+                            <li><a class="dropdown-item" href="paradise-valley-az.html">Paradise Valley, AZ</a></li>
+                            <li><a class="dropdown-item" href="uptown-charlotte-nc.html">Uptown, Charlotte</a></li>
+                            <li><a class="dropdown-item" href="silver-lake-la.html">Silver Lake, LA</a></li>
+                            <li><a class="dropdown-item" href="river-oaks-houston.html">River Oaks, Houston</a></li>
+                            <li><a class="dropdown-item" href="bridgeland-cypress-tx.html">Bridgeland, Cypress, TX</a></li>
+                            <li><a class="dropdown-item" href="historic-savannah-ga.html">Historic Savannah, GA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-contact d-flex flex-wrap align-items-center gap-3 ms-lg-auto mt-3 mt-lg-0">
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <span class="label d-block">Phone</span>
+                            <span class="value d-block">678-404-2660</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <span class="label d-block">Email</span>
+                            <span class="value d-block">bill@dreamneighborhood.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="col-lg-9">
+                <h1 class="display-5 fw-bold mb-3">Address Detection Test Pages</h1>
+                <p class="lead">A QA matrix of 25 synthetic community / neighborhood pages, each modeled on a real-world pattern from sites like Zillow, Redfin, Realtor.com, Compass, Lennar, Toll Brothers, The Villages, Howard Hughes Communities, HOA portals, and local broker neighborhood guides.</p>
+                <p class="text-muted">Every page below buries the address using a different technique so we can confirm the Dream Neighborhood popup can recover a usable street + city + state from each. Click any row to open the test page, then trigger the popup.</p>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th style="width: 50px;">#</th>
+                        <th>Test Page</th>
+                        <th>URL Hint Strength</th>
+                        <th>Where the Address Lives</th>
+                        <th>Expected Address</th>
+                        <th style="width: 110px;">Difficulty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="test-row"><td>01</td><td><a href="boulder-co.html"><strong>Boulder, CO</strong></a><div class="small text-muted">Zillow-style community page</div></td><td>Strong (city + state in URL)</td><td>H1, &lt;title&gt;, meta description, JSON-LD &mdash; everywhere.</td><td>1820 Folsom St, Boulder, CO 80302</td><td class="difficulty-easy">Easy</td></tr>
+                    <tr class="test-row"><td>02</td><td><a href="austin-heights-tx.html"><strong>Austin Heights, TX</strong></a><div class="small text-muted">Realtor.com neighborhood guide</div></td><td>Medium (hood + state in URL)</td><td>Buried inside body prose only.</td><td>2400 S Lamar Blvd, Austin, TX 78704</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>03</td><td><a href="community-12847.html"><strong>Community #12847</strong></a><div class="small text-muted">Numeric-ID SPA URL</div></td><td>None (just a numeric ID)</td><td>JSON-LD BreadcrumbList only.</td><td>900 Stewart Ave, Garden City, NY 11530</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>04</td><td><a href="the-summit.html"><strong>The Summit</strong></a><div class="small text-muted">Niche.com-style profile</div></td><td>None (hood name only)</td><td>Visible breadcrumb trail in the DOM.</td><td>1 Resort Dr, Asheville, NC 28804</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>05</td><td><a href="lake-nona-orlando.html"><strong>Lake Nona, Orlando</strong></a><div class="small text-muted">Lennar master-plan community</div></td><td>Medium (hood + city in URL)</td><td>Multiple model-home addresses; primary sales gallery in sidebar.</td><td>9801 Lake Nona Park Dr, Orlando, FL 32827</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>06</td><td><a href="buckhead-atlanta.html"><strong>Buckhead, Atlanta</strong></a><div class="small text-muted">Compass area guide</div></td><td>Medium (hood + city in URL)</td><td>Only inside the &lt;title&gt; tag.</td><td>3340 Peachtree Rd NE, Atlanta, GA 30326</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>07</td><td><a href="the-villages-fl.html"><strong>The Villages, FL</strong></a><div class="small text-muted">55+ active-adult community</div></td><td>Strong (hood + state in URL)</td><td>JSON-LD PostalAddress only.</td><td>1100 Main St, The Villages, FL 32162</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>08</td><td><a href="rancho-mission-viejo-ca.html"><strong>Rancho Mission Viejo, CA</strong></a><div class="small text-muted">Shea Homes builder community</div></td><td>Strong</td><td>Schema.org microdata itemprop attributes only.</td><td>30222 Esencia Dr, Rancho Mission Viejo, CA 92694</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>09</td><td><a href="west-loop-chicago.html"><strong>West Loop, Chicago</strong></a><div class="small text-muted">@properties urban neighborhood</div></td><td>Medium</td><td>Address split inside the visible breadcrumb (Chicago, IL > West Loop, 60607).</td><td>West Loop, Chicago, IL 60607</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>10</td><td><a href="summerlin-las-vegas-nv.html"><strong>Summerlin, Las Vegas, NV</strong></a><div class="small text-muted">Howard Hughes master-plan</div></td><td>Strong</td><td>Image alt attribute only.</td><td>1980 Festival Plaza Dr, Las Vegas, NV 89135</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>11</td><td><a href="mission-bay-sf.html"><strong>Mission Bay, San Francisco</strong></a><div class="small text-muted">Compass urban neighborhood</div></td><td>Medium</td><td>Canonical URL + og:url meta only.</td><td>1455 3rd St, San Francisco, CA 94158</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>12</td><td><a href="eagle-ridge.html"><strong>Eagle Ridge</strong></a><div class="small text-muted">Generic HOA portal</div></td><td>None</td><td>Footer only.</td><td>12700 Eagle Ridge Way, Reston, VA 20191</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>13</td><td><a href="the-hammocks-miami.html"><strong>The Hammocks, Miami</strong></a><div class="small text-muted">Coldwell Banker community</div></td><td>Medium</td><td>Street and city/state/ZIP are in different sections of the page.</td><td>9050 Hammocks Blvd, Miami, FL 33196</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>14</td><td><a href="trilogy-at-vistancia-az.html"><strong>Trilogy at Vistancia, AZ</strong></a><div class="small text-muted">Shea 55+ resort community</div></td><td>Strong</td><td>data-community-address attribute on a hidden div.</td><td>12575 W Hidden Mountain Way, Peoria, AZ 85383</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>15</td><td><a href="westside-portland-or.html"><strong>Westside, Portland, OR</strong></a><div class="small text-muted">Local broker guide</div></td><td>Strong</td><td>ZIP code visible, no street address anywhere.</td><td>Westside, Portland, OR 97210</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>16</td><td><a href="highland-park-dallas.html"><strong>Highland Park, Dallas</strong></a><div class="small text-muted">Briggs Freeman luxury guide</div></td><td>Medium</td><td>Only inside Open Graph meta tags (og:title, og:description).</td><td>4400 Beverly Dr, Dallas, TX 75205</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>17</td><td><a href="kentlands-md.html"><strong>Kentlands, MD</strong></a><div class="small text-muted">New urbanism community</div></td><td>Medium</td><td>Inside the &lt;iframe&gt; Google Maps URL only.</td><td>485 Main St, Gaithersburg, MD 20878</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>18</td><td><a href="boca-pointe-fl.html"><strong>Boca Pointe, FL</strong></a><div class="small text-muted">Country club community</div></td><td>Medium</td><td>hCard microformat (class="adr").</td><td>7144 Boca Pointe Dr, Boca Raton, FL 33433</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>19</td><td><a href="mountain-shadows-co.html"><strong>Mountain Shadows, CO</strong></a><div class="small text-muted">Local agent neighborhood</div></td><td>Medium</td><td>Inside the semantic &lt;address&gt; element only.</td><td>2350 Vindicator Dr, Colorado Springs, CO 80919</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>20</td><td><a href="paradise-valley-az.html"><strong>Paradise Valley, AZ</strong></a><div class="small text-muted">Toll Brothers community</div></td><td>Strong</td><td>Multiple model addresses in a table; primary sales-gallery address is highlighted.</td><td>5600 N Tatum Blvd, Paradise Valley, AZ 85253</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>21</td><td><a href="uptown-charlotte-nc.html"><strong>Uptown, Charlotte, NC</strong></a><div class="small text-muted">Allen Tate area guide</div></td><td>Strong</td><td>One nearby landmark address (red herring) + one true sales-office address in sidebar.</td><td>525 N College St, Charlotte, NC 28202</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>22</td><td><a href="silver-lake-la.html"><strong>Silver Lake, Los Angeles</strong></a><div class="small text-muted">SPA-style hydrated page</div></td><td>Weak (hood-LA in URL)</td><td>Inline &lt;script type="application/json"&gt; data blob.</td><td>2700 Hyperion Ave, Los Angeles, CA 90027</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>23</td><td><a href="river-oaks-houston.html"><strong>River Oaks, Houston</strong></a><div class="small text-muted">Greenwood King community</div></td><td>Medium</td><td>Inside an inactive (hidden) tab pane.</td><td>2929 Kirby Dr, Houston, TX 77098</td><td class="difficulty-hard">Hard</td></tr>
+                    <tr class="test-row"><td>24</td><td><a href="bridgeland-cypress-tx.html"><strong>Bridgeland, Cypress, TX</strong></a><div class="small text-muted">Master-plan community</div></td><td>Strong</td><td>Only inside the "Get Directions" button text + map href.</td><td>16902 Bridgeland Landing Dr, Cypress, TX 77433</td><td class="difficulty-medium">Medium</td></tr>
+                    <tr class="test-row"><td>25</td><td><a href="historic-savannah-ga.html"><strong>Historic Savannah, GA</strong></a><div class="small text-muted">Walking-tour district</div></td><td>Strong</td><td>Static map image alt + og:description meta only.</td><td>22 W Bryan St, Savannah, GA 31401</td><td class="difficulty-hard">Hard</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="alert alert-info mt-4">
+            <strong>How to use:</strong> Load any test page, trigger the popup, and confirm the auto-detected address matches the "Expected Address" column. The 25 cases collectively cover every common pattern observed across the major real estate sites we've audited.
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-12 col-md-8">
+                    <h6>Dream Neighborhood Realty Co.</h6>
+                    <p>3309 N Indian River Drive, St Lucie Village</p>
+                    <p>Phone: 678-404-2660</p>
+                    <p>Email: bill@dreamneighborhood.com</p>
+                    <p>Realtor: William Miller</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h6>Quick Links</h6>
+                    <ul class="nav flex-column page-list">
+                        <li class="nav-item"><a href="../search.html" class="nav-link">Search Properties</a></li>
+                        <li class="nav-item"><a href="melbourne-fl.html" class="nav-link">Neighborhoods</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <p class="text-center mb-0">All rights reserved &copy; 2026 Dream Neighborhood Realty Co.</p>
+        </div>
+    </div>
+
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
