@@ -1,0 +1,8 @@
+Flatten Neighborhoods dropdown to a single alphabetized list
+
+Drop the Florida Markets / Popup Detection Test Pages section headers
+and dividers in favor of one plain dropdown listing all 28 USA
+neighborhoods alphabetically, matching the original three-item style.
+Also upgrade the 25 test pages from their minimal brand-only header to
+the full site navbar, so QA can jump straight from one test page to the
+next via the Neighborhoods dropdown without going back to an index.
