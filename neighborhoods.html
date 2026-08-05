@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured Properties | Bills FP Realty Co</title>
+    <meta name="description" content="Explore neighborhoods across Melbourne, St. Lucie Village, and South Hutchinson Island with Dream Neighborhood. Listed by William Miller of Bills FP Realty Co">
+    <title>Neighborhoods | Bills FP Realty Co</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-3" href="index.html" title="Bills FP Realty Co">
                     <img src="images/logo.png" alt="Bills FP Realty Co logo" />
@@ -26,14 +27,14 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navBuy" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#" id="navBuy" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Buy</a>
                             <ul class="dropdown-menu" aria-labelledby="navBuy">
                                 <li><a class="dropdown-item" href="index.html#featured-properties">Featured Properties</a></li>
                                 <li><a class="dropdown-item" href="search.html">Search Properties</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="neighborhoods.html">Neighborhoods</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="neighborhoods.html">Neighborhoods</a></li>
                         <li class="nav-item"><a class="nav-link" href="schools.html">Schools</a></li>
                     </ul>
                     <div class="nav-contact d-flex flex-wrap align-items-center gap-3 ms-lg-auto mt-3 mt-lg-0">
@@ -55,12 +56,17 @@
                 </div>
             </div>
         </nav>
-        <div class="container py-5">
-            <h1>About Bills FP Realty Co</h1>
-            <p>William Miller specializes in coastal and riverfront properties in Melbourne, St. Lucie Village, and South Hutchinson Island, Florida.</p>
-            <p>With deep local knowledge and a focus on neighborhood data, we help buyers make informed decisions about both the home and the community.</p>
-            <a class="btn" href="search.html">Browse Properties</a>
-            <a class="btn dark ms-2" href="index.html#featured-properties">See Featured Listings</a>
+
+        <section class="section page-breadcrumb mb-4">
+            <div class="container">
+                <h2>Neighborhoods</h2>
+                <p>Explore local neighborhood insights for your next home.</p>
+            </div>
+        </section>
+
+        <div class="container pb-5">
+            <div id="dn-explorer"></div>
+            <script src="https://staging.dreamneighborhood.com/explorer/inline.js" async></script>
         </div>
     </div>
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
