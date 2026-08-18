@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="South Hutchinson Island, FL - Pristine barrier island on the Treasure Coast featuring uncrowded beaches, luxury waterfront homes, and access to the Indian River Lagoon. Explore this exclusive community with William Miller of Bills FP Realty Co">
-    <title>South Hutchinson Island, FL | Bills FP Realty Co</title>
+    <meta name="description" content="TEST listing — not a real listing. Fake brokerage page with no street in the URL. Address appears only on the page: 2190 Test Palmetto Ave, Fort Pierce, FL 34982.">
+    <title>TEST listing 8841 | Bills FP Realty Co</title>
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../libs/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-3" href="../index.html" title="Bills FP Realty Co">
-                    <img src="../images/logo.png" alt="Bills FP Realty Co logo" />
+                <img src="../images/logo.png" alt="Bills FP Realty Co logo" />
                 <div>
                     <span style="font-size:22px;font-weight:700;color:#009431;line-height:1.2;">Bills FP Realty Co</span>
                 </div>
@@ -26,11 +26,11 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navBuy" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Buy</a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="navBuy" role="button" data-bs-toggle="dropdown" aria-expanded="false">Buy</a>
                         <ul class="dropdown-menu" aria-labelledby="navBuy">
                             <li><a class="dropdown-item" href="../index.html#featured-properties">Featured Properties</a></li>
                             <li><a class="dropdown-item" href="../search.html">Search Properties</a></li>
+                            <li><a class="dropdown-item" href="../neighborhoods/detector-v7.html">Detector v7 test pages</a></li>
                         </ul>
                     </li>
                         <li class="nav-item"><a class="nav-link" href="../neighborhoods.html">Neighborhood (T)</a></li>
@@ -59,48 +59,53 @@
     </nav>
 
     <div class="container py-5">
+        <div class="alert alert-warning" role="alert">
+            <strong>TEST listing — not a real listing.</strong>
+            Fake brokerage inventory for Neighborhood detector v7 on staging. The URL has no street. The detector must read the address from the page body.
+        </div>
+
         <div class="row">
             <div class="col-lg-8">
-                <h1 class="display-5 fw-bold mb-4">South Hutchinson Island, FL</h1>
-                
-                <!-- Large Aerial Image -->
-                <div class="mb-5 position-relative">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2070&q=80" 
-                         class="img-fluid rounded shadow" 
-                         alt="Aerial view of South Hutchinson Island beaches and waterways"
-                         style="height: 420px; width: 100%; object-fit: cover;">
-                    <div class="position-absolute bottom-0 start-0 end-0 bg-gradient p-4 text-white rounded-bottom">
-                        <span class="badge bg-success mb-2">Aerial View</span>
-                        <p class="mb-0 small opacity-90">Barrier island paradise along Florida's Treasure Coast</p>
-                    </div>
+                <p class="text-uppercase small fw-bold text-warning mb-2">TEST &middot; Fake brokerage &middot; No street in URL</p>
+                <h1 class="display-5 fw-bold">2190 Test Palmetto Ave, Fort Pierce, FL 34982</h1>
+                <p class="lead text-muted">TEST listing 8841 &bull; 3 bed &bull; 2 bath &bull; not for sale</p>
+
+                <div class="my-4">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=2070&q=80" class="img-fluid rounded shadow" alt="TEST listing stand-in photo — not a real house for sale">
                 </div>
 
-                <h5 class="mb-3">Neighborhood Description</h5>
-                <p class="lead">South Hutchinson Island is a beautiful barrier island on Florida's Treasure Coast, celebrated for its pristine white-sand beaches, protected dunes, and rich marine ecosystem. This exclusive community offers residents direct access to the Atlantic Ocean and the Indian River Lagoon, making it a paradise for water sports enthusiasts, fishermen, and nature lovers. With low-density development, luxury waterfront homes, and a serene atmosphere, it provides the perfect balance of privacy and convenience, located just minutes from Vero Beach's cultural attractions and Fort Pierce's amenities.</p>
+                <h5 class="mt-5 mb-3">Description</h5>
+                <p>This is not a real listing. The fabricated address <strong>2190 Test Palmetto Ave, Fort Pierce, FL 34982</strong> lives in the heading and body only. The path is <code>/properties/test-listing-8841.html</code> so detector v7 cannot lean on a street slug.</p>
+                <p>Use the staging Neighborhood popup here to confirm address detection when the URL is an opaque listing ID.</p>
 
-                <div class="mt-5">
-                    <a href="details/south-hutchinson-island-fl-detail.html" class="btn btn-success btn-lg px-5">View Full Neighborhood Details ?</a>
+                <h5 class="mt-5 mb-3">Key Details</h5>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Address:</strong> 2190 Test Palmetto Ave</li>
+                            <li class="mb-2"><strong>City:</strong> Fort Pierce, FL</li>
+                            <li class="mb-2"><strong>ZIP:</strong> 34982</li>
+                            <li class="mb-2"><strong>Status:</strong> TEST — not a real listing</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Coverage:</strong> No street in URL</li>
+                            <li class="mb-2"><strong>Page type:</strong> Listing</li>
+                            <li class="mb-2"><strong>MLS / ID:</strong> TEST-8841</li>
+                            <li class="mb-2"><strong>Brokerage:</strong> Fake / test only</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
                 <div class="sticky-top" style="top: 100px;">
-                    <div class="border rounded p-4 bg-light mb-4">
-                        <h5 class="mb-3">Key Neighborhood Stats</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-3"><strong>Type:</strong> Barrier Island</li>
-                            <li class="mb-3"><strong>Primary Appeal:</strong> Beaches &amp; Boating</li>
-                            <li class="mb-3"><strong>Median Home Value:</strong> $850,000+</li>
-                            <li class="mb-3"><strong>Access:</strong> Indian River Lagoon + Atlantic</li>
-                            <li><strong>Nearest City:</strong> Vero Beach / Fort Pierce</li>
-                        </ul>
-                    </div>
-                    
                     <div class="border rounded p-4 bg-light">
-                        <h5 class="mb-3">Contact William Miller</h5>
-                        <p class="small text-muted mb-4">Bills FP Realty Co specialist for Treasure Coast barrier islands.</p>
-                        <a href="tel:6784042660" class="btn btn-success w-100 mb-2">Call 678-404-2660</a>
-                        <a href="mailto:bill@dreamneighborhood.com" class="btn btn-outline-dark w-100">Send Message</a>
+                        <h5 class="mb-3">TEST contact card</h5>
+                        <p class="small text-muted">Bills FP Realty Co &mdash; fake brokerage for staging</p>
+                        <p class="mb-4">Not a real listing. Detector v7 should resolve the body address, not the URL.</p>
+                        <a href="../neighborhoods/detector-v7.html" class="btn btn-outline-dark w-100">Detector v7 test pages</a>
                     </div>
                 </div>
             </div>
