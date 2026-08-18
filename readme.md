@@ -9,15 +9,17 @@ GitHub repo name stays `bills-fp-realty-co`.
 - Site: https://dnstagingtest.netlify.app
 - Neighborhood embed: https://dnstagingtest.netlify.app/neighborhoods
 
+Netlify rename is a separate track. In-repo links use the host above.
+
 ## Snippets (staging only)
 
-Do not point these at `app.dreamneighborhood.com` or `www.dreamneighborhoodschools.com`.
+Every `sdk.js` and `inline.js` host is `staging.dreamneighborhood.com`. Do not use `app.dreamneighborhood.com`.
 
 | Embed | Snippet |
 | --- | --- |
 | Popup Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/sdk.js` |
 | Embedded Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer`; full variant uses `data-variant="full"`) |
-| Popup School Explorer | Same staging SDK (`sdk.js` sets `__DN_SCHOOL_EXPLORER_ORIGIN__` to the staging schools host) |
+| Popup School Explorer | Same staging SDK (`https://staging.dreamneighborhood.com/explorer/sdk.js`) |
 | Embedded School Explorer | `https://dream-schools-preview-b6b5fcaf4493.herokuapp.com/embed.js` (`#dream-schools-explorer`) |
 
 Featured embeds on the site are only those four (nav: Neighborhood (T)/(F), Schools (T)/(M), plus the sitewide popup).
