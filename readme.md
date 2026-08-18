@@ -1,26 +1,26 @@
-# Bills FP Realty Co
+# DN Staging Test
 
 STAGING test realtor site for Neighborhood staging (v690): detector v7, ZIP-centroid fallback, and upgrade-request retire.
 
-GitHub repo name stays `bills-fp-realty-co`.
+Public name: **DN Staging Test**. Public email: **wdmtaj@gmail.com**. GitHub repo name stays `bills-fp-realty-co`.
+
+Identity decision note: [docs/site-identity.md](docs/site-identity.md).
 
 ## Public URL
 
-- Site: https://dnstagingtest.netlify.app
-- Neighborhood embed: https://dnstagingtest.netlify.app/neighborhoods
-
-Netlify rename is a separate track. In-repo links use the host above.
+- Site: https://dn-stagingtest.netlify.app
+- Neighborhood embed: https://dn-stagingtest.netlify.app/neighborhoods
 
 ## Snippets (staging only)
 
-Every `sdk.js` and `inline.js` host is `staging.dreamneighborhood.com`. Do not use `app.dreamneighborhood.com`.
+Every `sdk.js` and `inline.js` host is `staging.dreamneighborhood.com`. Do not use `app.dreamneighborhood.com` or `www.dreamneighborhoodschools.com`.
 
 | Embed | Snippet |
 | --- | --- |
 | Popup Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/sdk.js` |
 | Embedded Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer`; full variant uses `data-variant="full"`) |
 | Popup School Explorer | Same staging SDK (`https://staging.dreamneighborhood.com/explorer/sdk.js`) |
-| Embedded School Explorer | `https://dream-schools-preview-b6b5fcaf4493.herokuapp.com/embed.js` (`#dream-schools-explorer`) |
+| Embedded School Explorer | Same staging inline (`https://staging.dreamneighborhood.com/explorer/inline.js`) (`#dream-schools-explorer`) |
 
 Featured embeds on the site are only those four (nav: Neighborhood (T)/(F), Schools (T)/(M), plus the sitewide popup).
 
