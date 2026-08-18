@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Riverfront estate for sale in St. Lucie Village, FL. 4 bed, 3 bath, 3,200 sq ft with Indian River views. Listed by William Miller of Bills FP Realty Co">
-    <title>3309 N Indian River Drive, St Lucie Village, FL | Bills FP Realty Co</title>
+    <meta name="description" content="TEST listing — not a real listing. 3335 Cunningham Rd, Le Grand, CA 95333. Fake brokerage page to exercise Neighborhood detector v7 on a street missing from the street file.">
+    <title>TEST: 3335 Cunningham Rd, Le Grand, CA 95333 | Bills FP Realty Co</title>
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../libs/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -30,6 +30,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navBuy">
                             <li><a class="dropdown-item" href="../index.html#featured-properties">Featured Properties</a></li>
                             <li><a class="dropdown-item" href="../search.html">Search Properties</a></li>
+                            <li><a class="dropdown-item" href="../neighborhoods/detector-v7.html">Detector v7 test pages</a></li>
                         </ul>
                     </li>
                         <li class="nav-item"><a class="nav-link" href="../neighborhoods.html">Neighborhood (T)</a></li>
@@ -58,58 +59,57 @@
     </nav>
 
     <div class="container py-5">
+        <div class="alert alert-warning" role="alert">
+            <strong>TEST listing — not a real listing.</strong>
+            Fake brokerage inventory for Neighborhood detector v7 on staging. This address is a real MLS house used only to exercise a street-file miss (Cunningham Rd is incomplete in our street file). Bills FP Realty Co is not offering this property for sale.
+        </div>
+
         <div class="row">
             <div class="col-lg-8">
-                <h1 class="display-5 fw-bold">3309 N Indian River Drive, St Lucie Village, FL</h1>
-                <p class="lead text-muted">$1,250,000 • 4 bed • 3 bath • 3,200 sq ft</p>
-                
+                <p class="text-uppercase small fw-bold text-warning mb-2">TEST &middot; Fake brokerage &middot; Street in URL</p>
+                <h1 class="display-5 fw-bold">3335 Cunningham Rd, Le Grand, CA 95333</h1>
+                <p class="lead text-muted">TEST listing &bull; 3 bed &bull; 2 bath &bull; not for sale here</p>
+
                 <div class="my-4">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2070&q=80" class="img-fluid rounded shadow" alt="Riverfront home in St. Lucie Village">
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=2070&q=80" class="img-fluid rounded shadow" alt="TEST listing stand-in photo — not the real Cunningham Road house">
                 </div>
 
-                <h5 class="mt-5 mb-3">Description</h5>
-                <p>Riverfront retreat on the Indian River with private dock potential, lush mature landscaping, and panoramic water views from nearly every room. Situated in the quiet historic enclave of St. Lucie Village just north of Fort Pierce, this property captures sunrise over the river and a true Old Florida feel.</p>
-                <p>Spacious split floor plan, vaulted ceilings, and oversized sliders frame the water views. A screened lanai and large backyard offer space for entertaining, gardening, or simply watching dolphins and manatees pass by.</p>
+                <h5 class="mt-5 mb-3">Why this page exists</h5>
+                <p>Detector v7 should read the street from the URL and the visible address <strong>3335 Cunningham Rd, Le Grand, CA 95333</strong>. The street file does not fully cover Cunningham Rd, so this page exercises the miss path (ZIP-centroid fallback / upgrade-request retire) rather than a clean street match.</p>
+                <p>Do not treat this as inventory. The photo is a stock stand-in. The address is included so the detector has a street + city + ZIP to resolve against an incomplete street file.</p>
 
                 <h5 class="mt-5 mb-3">Key Details</h5>
                 <div class="row g-4">
                     <div class="col-md-6">
                         <ul class="list-unstyled">
-                            <li class="mb-2"><strong>Address:</strong> 3309 N Indian River Dr</li>
-                            <li class="mb-2"><strong>Waterfront:</strong> Yes — Indian River</li>
-                            <li class="mb-2"><strong>Dock Potential:</strong> Yes</li>
-                            <li class="mb-2"><strong>Garage:</strong> 2-car</li>
+                            <li class="mb-2"><strong>Address:</strong> 3335 Cunningham Rd</li>
+                            <li class="mb-2"><strong>City:</strong> Le Grand, CA</li>
+                            <li class="mb-2"><strong>ZIP:</strong> 95333</li>
+                            <li class="mb-2"><strong>Status:</strong> TEST — not a real listing</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="list-unstyled">
-                            <li class="mb-2"><strong>Bedrooms:</strong> 4</li>
-                            <li class="mb-2"><strong>Bathrooms:</strong> 3</li>
-                            <li class="mb-2"><strong>Square Feet:</strong> 3,200</li>
-                            <li class="mb-2"><strong>Price:</strong> $1,250,000</li>
+                            <li class="mb-2"><strong>Coverage:</strong> Street in URL</li>
+                            <li class="mb-2"><strong>Page type:</strong> Listing</li>
+                            <li class="mb-2"><strong>Detector case:</strong> Incomplete street file</li>
+                            <li class="mb-2"><strong>Brokerage:</strong> Fake / test only</li>
                         </ul>
                     </div>
-                </div>
-
-                <h5 class="mt-5 mb-3">Amenities & Features</h5>
-                <div class="row g-3">
-                    <div class="col-6 col-md-4"><div class="border p-3 rounded text-center">River Views</div></div>
-                    <div class="col-6 col-md-4"><div class="border p-3 rounded text-center">Screened Lanai</div></div>
-                    <div class="col-6 col-md-4"><div class="border p-3 rounded text-center">Vaulted Ceilings</div></div>
-                    <div class="col-6 col-md-4"><div class="border p-3 rounded text-center">Mature Landscaping</div></div>
-                    <div class="col-6 col-md-4"><div class="border p-3 rounded text-center">Split Floor Plan</div></div>
-                    <div class="col-6 col-md-4"><div class="border p-3 rounded text-center">Large Backyard</div></div>
                 </div>
             </div>
 
             <div class="col-lg-4">
                 <div class="sticky-top" style="top: 100px;">
                     <div class="border rounded p-4 bg-light">
-                        <h5 class="mb-3">Listed by William Miller</h5>
-                        <p class="small text-muted">Bills FP Realty Co</p>
-                        <p class="mb-4">Call or email to schedule a private showing or to learn more about this property and the St. Lucie Village neighborhood.</p>
-                        <a href="tel:6784042660" class="btn btn-success w-100 mb-2">Call 678-404-2660</a>
-                        <a href="mailto:bill@dreamneighborhood.com" class="btn btn-outline-dark w-100">Email William</a>
+                        <h5 class="mb-3">TEST contact card</h5>
+                        <p class="small text-muted">Bills FP Realty Co &mdash; fake brokerage for staging</p>
+                        <p class="mb-4">Not a real listing. Use this page only to exercise the staging Neighborhood popup (detector v7).</p>
+                        <a href="../neighborhoods/detector-v7.html" class="btn btn-outline-dark w-100">Detector v7 test pages</a>
+                    </div>
+
+                    <div class="mt-4 text-center text-muted small">
+                        <p>Neighborhood data powered by Dream Neighborhood (staging)</p>
                     </div>
                 </div>
             </div>

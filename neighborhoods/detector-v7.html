@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neighborhood detector v7 coverage pages on this STAGING test realtor site. Fake brokerage listings and area pages for street-in-URL, no-street-in-URL, listing vs area, title-only place names, Hollywood Hills-style area, and Cunningham Rd street-file miss.">
+    <title>Detector v7 test pages | Bills FP Realty Co</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="../index.html" title="Bills FP Realty Co">
+                <img src="../images/logo.png" alt="Bills FP Realty Co logo" />
+                <div>
+                    <span style="font-size:22px;font-weight:700;color:#009431;line-height:1.2;">Bills FP Realty Co</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteMainNav"
+                aria-controls="siteMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="siteMainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navBuy" role="button" data-bs-toggle="dropdown" aria-expanded="false">Buy</a>
+                        <ul class="dropdown-menu" aria-labelledby="navBuy">
+                            <li><a class="dropdown-item" href="../index.html#featured-properties">Featured Properties</a></li>
+                            <li><a class="dropdown-item" href="../search.html">Search Properties</a></li>
+                            <li><a class="dropdown-item active" href="detector-v7.html">Detector v7 test pages</a></li>
+                        </ul>
+                    </li>
+                        <li class="nav-item"><a class="nav-link" href="../neighborhoods.html">Neighborhood (T)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../neighborhoods-full.html">Neighborhood (F)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../schools.html">Schools (T)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../schools-minimalist.html">Schools (M)</a></li>
+                </ul>
+                <div class="nav-contact d-flex flex-wrap align-items-center gap-3 ms-lg-auto mt-3 mt-lg-0">
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <span class="label d-block">Phone</span>
+                            <span class="value d-block">678-404-2660</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <span class="label d-block">Email</span>
+                            <span class="value d-block">bill@dreamneighborhood.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold mb-3">Detector v7 test pages</h1>
+        <p class="lead">Neighborhood staging (v690) coverage for detector v7 + ZIP-centroid fallback + upgrade-request retire. Every page below is labeled TEST / fake brokerage. Featured embeds on this site stay the four: popup School Explorer, embedded School Explorer, popup Neighborhood Explorer, embedded Neighborhood Explorer.</p>
+
+        <div class="alert alert-info">
+            Snippets on this site hit staging. Popup Neighborhood Explorer and the School Explorer popup both load from
+            <code>https://staging.dreamneighborhood.com/explorer/sdk.js</code>.
+            Embedded Neighborhood Explorer uses <code>https://staging.dreamneighborhood.com/explorer/inline.js</code>.
+            Decision note in the repo: <code>docs/detector-v7-coverage.md</code>.
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover mt-4">
+                <thead class="table-light">
+                    <tr>
+                        <th>Page</th>
+                        <th>Type</th>
+                        <th>URL hint</th>
+                        <th>What detector v7 should exercise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="../properties/4401-test-cedar-st-melbourne-fl.html">4401-test-cedar-st-melbourne-fl.html</a></td>
+                        <td>Listing (TEST, fake)</td>
+                        <td>Street in URL</td>
+                        <td>Fabricated Melbourne house. Street slug + visible address.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../properties/test-listing-8841.html">test-listing-8841.html</a></td>
+                        <td>Listing (TEST, fake)</td>
+                        <td>No street in URL</td>
+                        <td>Opaque listing ID. Address only in the page: 2190 Test Palmetto Ave, Fort Pierce, FL 34982.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../properties/3335-cunningham-rd-le-grand-ca.html">3335-cunningham-rd-le-grand-ca.html</a></td>
+                        <td>Listing (TEST)</td>
+                        <td>Street in URL</td>
+                        <td>Doherty-style miss: 3335 Cunningham Rd, Le Grand, CA 95333. Real MLS address; street file is incomplete. Not a listing on this brokerage.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="hollywood-hills.html">hollywood-hills.html</a></td>
+                        <td>Area / neighborhood</td>
+                        <td>Area name, no street</td>
+                        <td>Hollywood Hills-style: resolve an area, not a house address.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="title-only-place.html">title-only-place.html</a></td>
+                        <td>Area / neighborhood</td>
+                        <td>No street; slug is generic</td>
+                        <td>Title-only place name. Document title is <code>Los Feliz</code>; heading/body do not repeat it.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="mt-4"><a href="test-index.html">Address-embed pattern suite (25 pages)</a> remains available for broader popup QA.</p>
+    </div>
+
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://staging.dreamneighborhood.com/explorer/sdk.js"></script>
+</body>
+</html>
