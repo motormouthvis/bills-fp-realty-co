@@ -2,7 +2,7 @@
 
 These extra listing and area pages exist so this STAGING test realtor site can exercise Neighborhood staging (v690) **detector v7** — including ZIP-centroid fallback and upgrade-request retire — against `staging.dreamneighborhood.com`.
 
-Snippet hosts: every `sdk.js` and `inline.js` is `https://staging.dreamneighborhood.com/explorer/...`. None use `app.dreamneighborhood.com` or `www.dreamneighborhoodschools.com`. Site identity: [site-identity.md](site-identity.md).
+Snippet hosts: Neighborhood `sdk.js` and `inline.js` are `https://staging.dreamneighborhood.com/explorer/...`. Embedded School Explorer uses the staging Schools `embed.js` on `#dream-schools-explorer`. None use `app.dreamneighborhood.com`. Site identity: [site-identity.md](site-identity.md).
 
 They are not inventory. Pages a buyer could mistake for a real offer are labeled **TEST**, **fake brokerage**, and **not a real listing**.
 
