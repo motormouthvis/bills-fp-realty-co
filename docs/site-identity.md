@@ -20,13 +20,16 @@ In-repo links use **https://dn-stagingtest.netlify.app**.
 
 ## Snippets
 
-This site stays on staging snippets only:
+Neighborhood snippets stay on staging:
 
 - `https://staging.dreamneighborhood.com/explorer/sdk.js`
-- `https://staging.dreamneighborhood.com/explorer/inline.js`
+- `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer` only)
 
-Do not add `www.dreamneighborhoodschools.com` or `app.dreamneighborhood.com`. Do not add a herokuapp.com or dream-schools-preview School Explorer leftover.
+Embedded School Explorer uses the staging Schools host (Neighborhood `inline.js` does not mount `#dream-schools-explorer`):
 
-Schools pages keep `#dream-schools-explorer` so an embedded School Explorer can still mount if the staging sdk hands it off.
+- `https://dream-schools-preview-b6b5fcaf4493.herokuapp.com/embed.js`
+- mount `#dream-schools-explorer` (minimalist keeps `data-variant="minimalist"`)
+
+Do not add `www.dreamneighborhoodschools.com` or `app.dreamneighborhood.com` unless the staging Schools embed is down.
 
 Featured product surfaces stay popup + embedded School Explorer and Neighborhood Explorer. Nothing else.

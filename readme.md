@@ -13,14 +13,14 @@ Identity decision note: [docs/site-identity.md](docs/site-identity.md).
 
 ## Snippets (staging only)
 
-Every `sdk.js` and `inline.js` host is `staging.dreamneighborhood.com`. Do not use `app.dreamneighborhood.com` or `www.dreamneighborhoodschools.com`.
+Neighborhood `sdk.js` and `inline.js` stay on `staging.dreamneighborhood.com`. Do not use `app.dreamneighborhood.com`. Embedded School Explorer uses the staging Schools `embed.js` (Neighborhood `inline.js` only mounts `#dn-explorer`).
 
 | Embed | Snippet |
 | --- | --- |
 | Popup Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/sdk.js` |
 | Embedded Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer`; full variant uses `data-variant="full"`) |
-| Popup School Explorer | Same staging SDK (`https://staging.dreamneighborhood.com/explorer/sdk.js`) |
-| Embedded School Explorer | Same staging inline (`https://staging.dreamneighborhood.com/explorer/inline.js`) (`#dream-schools-explorer`) |
+| Popup School Explorer | Same staging Neighborhood SDK (`https://staging.dreamneighborhood.com/explorer/sdk.js`) |
+| Embedded School Explorer | Staging Schools embed (`https://dream-schools-preview-b6b5fcaf4493.herokuapp.com/embed.js`) (`#dream-schools-explorer`; minimalist uses `data-variant="minimalist"`) |
 
 Featured embeds on the site are only those four (nav: Neighborhood (T)/(F), Schools (T)/(M), plus the sitewide popup).
 
