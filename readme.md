@@ -18,7 +18,7 @@ Neighborhood `sdk.js` and `inline.js` stay on `staging.dreamneighborhood.com`. D
 | Embed | Snippet |
 | --- | --- |
 | Popup Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/sdk.js` |
-| Embedded Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer`; full variant uses `data-variant="full"`) |
+| Embedded Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer`; tabbed `/neighborhoods` sets `data-min-height="900"` so tab chrome + first screen fit without inner scroll; full variant uses `data-variant="full"`) |
 | Popup School Explorer | Same staging Neighborhood SDK (`https://staging.dreamneighborhood.com/explorer/sdk.js`) |
 | Embedded School Explorer | Staging Schools embed (`https://dream-schools-preview-b6b5fcaf4493.herokuapp.com/embed.js`) (`#dream-schools-explorer`; minimalist uses `data-variant="minimalist"`) |
 
