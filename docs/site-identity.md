@@ -33,3 +33,5 @@ Embedded School Explorer uses the staging Schools host (Neighborhood `inline.js`
 Do not add `www.dreamneighborhoodschools.com` or `app.dreamneighborhood.com` unless the staging Schools embed is down.
 
 Featured product surfaces stay popup + embedded School Explorer and Neighborhood Explorer. Nothing else.
+
+`/neighborhoods-narrow` is a 430px-wide column TEST page for staging Neighborhood Explorer chip scroll (sarasotahomes-ish listing column). Same staging `#dn-explorer` + `inline.js` as `/neighborhoods`. Not a production snippet.

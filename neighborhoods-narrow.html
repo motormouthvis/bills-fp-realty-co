@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore schools in the minimalist Dream Neighborhood Schools embed near Melbourne, St. Lucie Village, and South Hutchinson Island. Listed by William Miller of DN Staging Test">
-    <title>Schools (M) | DN Staging Test</title>
+    <meta name="description" content="430px-wide column test for staging Neighborhood Explorer chip scroll. Fake brokerage / TEST page. Listed by William Miller of DN Staging Test">
+    <title>Neighborhood - Narrow | DN Staging Test</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .narrow-explorer-column {
+            width: 430px;
+            max-width: 430px;
+            margin: 0 auto;
+            border: 1px solid #c5cdd6;
+            background: #f4f7f5;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -37,9 +48,9 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="neighborhoods.html">Neighborhood (T)</a></li>
                         <li class="nav-item"><a class="nav-link" href="neighborhoods-full.html">Neighborhood (F)</a></li>
-                        <li class="nav-item"><a class="nav-link" href="neighborhoods-narrow.html">Neighborhood - Narrow</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="neighborhoods-narrow.html">Neighborhood - Narrow</a></li>
                         <li class="nav-item"><a class="nav-link" href="schools.html">Schools (T)</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="schools-minimalist.html">Schools (M)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="schools-minimalist.html">Schools (M)</a></li>
                     </ul>
                     <div class="nav-contact d-flex flex-wrap align-items-center gap-3 ms-lg-auto mt-3 mt-lg-0">
                         <div class="contact-item">
@@ -63,14 +74,16 @@
 
         <section class="section page-breadcrumb mb-4">
             <div class="container">
-                <h2>Schools (M)</h2>
-                <p>Minimalist Dream Neighborhood Schools embed.</p>
+                <h2>Neighborhood - Narrow</h2>
+                <p>430px-wide column test for staging Neighborhood Explorer chip scroll (sarasotahomes-ish listing column). Fake brokerage / TEST page — not production.</p>
             </div>
         </section>
 
         <div class="container pb-5">
-            <div id="dream-schools-explorer" data-variant="minimalist"></div>
-            <script src="https://dream-schools-preview-b6b5fcaf4493.herokuapp.com/embed.js" async></script>
+            <div class="narrow-explorer-column">
+                <div id="dn-explorer" data-min-height="900"></div>
+                <script src="https://staging.dreamneighborhood.com/explorer/inline.js" async></script>
+            </div>
         </div>
     </div>
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
