@@ -34,4 +34,4 @@ Do not add `www.dreamneighborhoodschools.com` or `app.dreamneighborhood.com` unl
 
 Featured product surfaces stay popup + embedded School Explorer and Neighborhood Explorer. Nothing else.
 
-`/neighborhoods-narrow` is a 430px-wide column TEST page for staging Neighborhood Explorer chip scroll (sarasotahomes-ish listing column). Same staging `#dn-explorer` + `inline.js` as `/neighborhoods`. Not a production snippet.
+`/neighborhoods-narrow` is a 680px-wide column TEST page for staging Neighborhood Explorer (matches Sarasota Homes DN explorer column). Same staging `#dn-explorer` + `inline.js` as `/neighborhoods`. Not a production snippet.

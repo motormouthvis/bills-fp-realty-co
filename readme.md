@@ -10,7 +10,7 @@ Identity decision note: [docs/site-identity.md](docs/site-identity.md).
 
 - Site: https://dn-stagingtest.netlify.app
 - Neighborhood embed: https://dn-stagingtest.netlify.app/neighborhoods
-- Neighborhood narrow column (430px chip-scroll test): https://dn-stagingtest.netlify.app/neighborhoods-narrow
+- Neighborhood narrow column (680px, matches Sarasota Homes DN explorer): https://dn-stagingtest.netlify.app/neighborhoods-narrow
 
 ## Snippets (staging only)
 
@@ -19,7 +19,7 @@ Neighborhood `sdk.js` and `inline.js` stay on `staging.dreamneighborhood.com`. D
 | Embed | Snippet |
 | --- | --- |
 | Popup Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/sdk.js` |
-| Embedded Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer`; tabbed `/neighborhoods` sets `data-min-height="900"` so tab chrome + first screen fit without inner scroll; full variant uses `data-variant="full"`; `/neighborhoods-narrow` is the same tabbed embed in a fixed 430px column for chip-scroll QA) |
+| Embedded Neighborhood Explorer | `https://staging.dreamneighborhood.com/explorer/inline.js` (`#dn-explorer`; tabbed `/neighborhoods` sets `data-min-height="900"` so tab chrome + first screen fit without inner scroll; full variant uses `data-variant="full"`; `/neighborhoods-narrow` is the same tabbed embed in a fixed 680px column matching the Sarasota Homes DN explorer) |
 | Popup School Explorer | Same staging Neighborhood SDK (`https://staging.dreamneighborhood.com/explorer/sdk.js`) |
 | Embedded School Explorer | Staging Schools embed (`https://dream-schools-preview-b6b5fcaf4493.herokuapp.com/embed.js`) (`#dream-schools-explorer`; tabbed `/schools` sets `data-min-height="900"` so tab chrome + first screen fit without inner scroll; minimalist uses `data-variant="minimalist"`) |
 
